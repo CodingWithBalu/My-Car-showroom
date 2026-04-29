@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Car Showroom</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>🚗 My Car Showroom</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#cars">Cars</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Luxury Cars Collection</h2>
+  <p>Explore premium cars with best deals</p>
+  <button onclick="scrollToCars()">Browse Cars</button>
+</section>
+
+<section id="cars" class="cars">
+  <h2>Available Cars</h2>
+  <input type="text" id="search" placeholder="Search car..." onkeyup="filterCars()">
+  <div id="carContainer" class="grid"></div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <form onsubmit="submitForm(event)">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 My Car Showroom</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
